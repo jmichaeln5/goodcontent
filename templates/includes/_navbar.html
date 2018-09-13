@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -14,9 +14,19 @@
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/articles">Articles</a></li>
-        <li><a href="/register">SignUp</a></li>
-        <li><a href="/login">Login</a></li>
       </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        {%  if session.logged_in %}
+          <li><a href="/dashboard">Dashboard</a></li>
+          <li><a href="/logout">Logout</a></li>
+        {% else %}
+          <li><a href="/register">SignUp</a></li>
+          <li><a href="/login">Login</a></li>
+        {% endif %}
+
+      </ul>
+
     </div><!--/.nav-collapse -->
   </div>
 </nav>
