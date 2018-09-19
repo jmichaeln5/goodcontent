@@ -288,6 +288,8 @@ def delete_article(id):
 
 
 #####################################
+#####################################
+#####################################
 # Should be last line of file
 if __name__ == '__main__':
     app.secret_key='secret_key'
