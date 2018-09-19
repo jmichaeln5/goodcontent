@@ -7,9 +7,11 @@
 
     {% for article in articles  %}
 
-    <h5 class="list-group-item">
-      <a href="article/{{article.id}}">{{article.title}}</a>
-    </h5>
+      <a href="article/{{article.id}}">
+          <h5 class="list-group-item">
+            {{article.title}}
+          </h5>
+      </a>
 
     {% endfor %}
 
