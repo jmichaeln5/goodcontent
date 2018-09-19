@@ -11,7 +11,6 @@ app = Flask(__name__)
 
 # ckeditor= CKEditor(app)
 
-
 # Config MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
