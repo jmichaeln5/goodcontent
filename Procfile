@@ -1,1 +1,1 @@
-web: python run.py
+web: gunicorn crud_flask_env:app 
