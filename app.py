@@ -11,27 +11,29 @@ app = Flask(__name__)
 # ckeditor= CKEditor(app)
 
 # Config MySQL
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'crud_flask_env'
-app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
-
-# init MySQL
-mysql = MySQL(app)
-
-
-
-
-# # Config MySQL
 # app.config['MYSQL_HOST'] = 'localhost'
 # app.config['MYSQL_USER'] = 'root'
 # app.config['MYSQL_PASSWORD'] = ''
 # app.config['MYSQL_DB'] = 'crud_flask_env'
 # app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
-
+#
 # # init MySQL
 # mysql = MySQL(app)
+
+
+
+
+### CLEARDB_DATABASE_URL: mysql://b156f23ccdb67c:cdd233ab@us-cdbr-iron-east-01.cleardb.net/heroku_db4c834d154399d?reconnect=true
+
+# Config MySQL
+app.config['MYSQL_HOST'] = 'us-cdbr-iron-east-01.cleardb.net/'
+app.config['MYSQL_USER'] = 'b156f23ccdb67c'
+app.config['MYSQL_PASSWORD'] = 'cdd233ab '
+app.config['MYSQL_DB'] = 'heroku_db4c834d154399d'
+app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
+
+# init MySQL
+mysql = MySQL(app)
 
 
 
