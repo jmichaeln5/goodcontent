@@ -19,8 +19,6 @@ app = Flask(__name__)
 # # init MySQL
 # mysql = MySQL(app)
 
-
-
 ###CLEARDB_DATABASE_URL:
 ##mysql://bb3cc11844232f:9051ded7@us-cdbr-iron-east-01.cleardb.net/heroku_e814de284f0e4b2?reconnect=true
 
@@ -32,7 +30,7 @@ app.config['MYSQL_USER'] = 'bb3cc11844232f'
 # app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_PASSWORD'] = '9051ded7'
 # app.config['MYSQL_DB'] = 'crud_flask_env'
-app.config['MYSQL_DB'] = 'heroku_e814de284f0e4b2'
+app.config['MYSQL_DB'] = ' '
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 # init MySQL
 mysql = MySQL(app)
